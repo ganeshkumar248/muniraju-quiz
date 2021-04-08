@@ -7,7 +7,7 @@ export default function App() {
 			answerOptions: [
 				{ answerText: 'భాస్కర్ మామ(post office)', isCorrect: false },
 				{ answerText: 'శేషాద్రి మామ', isCorrect: false },
-				{ answerText: 'సంకు మామ', isCorrect: true },
+				{ answerText: 'శంఖు మామ', isCorrect: true },
 				{ answerText: 'పై ఏవి కావు', isCorrect: false },
 			],
 		},
@@ -39,12 +39,12 @@ export default function App() {
 			],
 		},
 		{
-			questionText: 'మునిరాజు ఫోన్ లో వున్న కలెక్షన్ ఎంత GB?',
+			questionText: 'మునిరాజు గద ఉపయోగించే ప్రాంతం పేరు?',
 			answerOptions: [
-				{ answerText: '10', isCorrect: false },
-				{ answerText: '256', isCorrect: false },
-				{ answerText: '6.5', isCorrect: false },
-				{ answerText: '150', isCorrect: true },
+				{ answerText: 'గూడలి', isCorrect: false },
+				{ answerText: 'మెట్టు', isCorrect: true },
+				{ answerText: 'గుణపాడు', isCorrect: false },
+				{ answerText: 'మెట్టు', isCorrect: false },
 			],
 		},
 	];
