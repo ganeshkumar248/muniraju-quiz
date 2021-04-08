@@ -44,7 +44,7 @@ export default function App() {
 				{ answerText: 'గూడలి', isCorrect: false },
 				{ answerText: 'మెట్టు', isCorrect: true },
 				{ answerText: 'గుణపాడు', isCorrect: false },
-				{ answerText: 'మెట్టు', isCorrect: false },
+				{ answerText: 'మల్లం', isCorrect: false },
 			],
 		},
 	];
