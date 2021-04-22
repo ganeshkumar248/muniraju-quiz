@@ -14,6 +14,7 @@ body {
 body {
   background-color: #7cc6fe;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -21,7 +22,7 @@ body {
 
 .app {
   background-color: #252d4a;
-  width: 450px;
+  width: 80vw;
   min-height: 200px;
   height: min-content;
   border-radius: 15px;
@@ -39,7 +40,7 @@ body {
 
 /* QUESTION/TIMER/LEFT SECTION */
 .question-section {
-  width: 100%;
+  width: 80vw;
   position: relative;
 }
 
@@ -95,9 +96,9 @@ button {
   background-color: #ff3333;
 }
 
-button:hover {
+/* button:hover {
   background-color: #555e7d;
-}
+} */
 
 button:focus {
   outline: none;
