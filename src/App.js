@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function App() {
   const questions = [
     {
-      questionText: "మునిరాజు వాళ్ళ మామ ఎవరు(పిల్లను ఇచ్చే మామ)?",
+      questionText: "మునిరాజుకి పిల్లను ఇచ్చే మామ ఎవరు?",
       answerOptions: [
         { answerText: "భాస్కర్ మామ(post office)", isCorrect: false },
         { answerText: "శేషాద్రి మామ", isCorrect: false },
