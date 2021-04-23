@@ -66,7 +66,7 @@ export default function App() {
       ],
     },
     {
-      questionText: "మునిరాజు మెట్టులో ఎన్ని మెట్లు ఎక్కాడు??",
+      questionText: "మునిరాజు మెట్టులో ఎన్ని మెట్లు ఎక్కాడు?",
       answerOptions: [
         { answerText: "25", isCorrect: false },
         { answerText: "10", isCorrect: false },
