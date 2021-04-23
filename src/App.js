@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function App() {
   const questions = [
     {
-      questionText: "మునిరాజు వాళ్ళ మామ ఎవరు?",
+      questionText: "మునిరాజు వాళ్ళ మామ ఎవరు(పిల్లను ఇచ్చే మామ)?",
       answerOptions: [
         { answerText: "భాస్కర్ మామ(post office)", isCorrect: false },
         { answerText: "శేషాద్రి మామ", isCorrect: false },
@@ -34,7 +34,7 @@ export default function App() {
       answerOptions: [
         { answerText: "10", isCorrect: false },
         { answerText: "256", isCorrect: false },
-        { answerText: "6.5", isCorrect: false },
+        { answerText: "50", isCorrect: false },
         { answerText: "150", isCorrect: true },
       ],
     },
@@ -47,11 +47,39 @@ export default function App() {
         { answerText: "మల్లం", isCorrect: false },
       ],
     },
+    {
+      questionText: "మునిరాజు యొక్క	PUBG partner ఎవరు?",
+      answerOptions: [
+        { answerText: "కాలినకొయ్య", isCorrect: false },
+        { answerText: "సుబ్బు వారియర్", isCorrect: false },
+        { answerText: "తేజ వారియర్", isCorrect: true },
+        { answerText: "పై ఏవి కావు", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "మునిరాజు favorite item in పానీపూరి షాప్?",
+      answerOptions: [
+        { answerText: "పానీపూరి", isCorrect: false },
+        { answerText: "మసాల పూరి", isCorrect: false },
+        { answerText: "ఉల్లిపాయలు", isCorrect: true },
+        { answerText: "ధనియాల పొడి", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "మునిరాజు మెట్టులో ఎన్ని మెట్లు ఎక్కాడు??",
+      answerOptions: [
+        { answerText: "25", isCorrect: false },
+        { answerText: "10", isCorrect: false },
+        { answerText: "18", isCorrect: false },
+        { answerText: "5", isCorrect: true },
+      ],
+    },
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+  const [comment, setComment] = useState("");
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
@@ -63,6 +91,21 @@ export default function App() {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+      if (0 <= score < 4) {
+        setComment(
+          "మీరు గెలుచుకున్నారు one packet of ManForce Extra Dotted Condoms"
+        );
+      }
+      if (4 <= score < 6) {
+        setComment(
+          "మీరు గెలుచుకున్నారు one packet of Durex Air Ultra Thin Condoms"
+        );
+      }
+      if (6 <= score <= 8) {
+        setComment(
+          "మీరు గెలుచుకున్నారు one packet of Kamasutra Superthin Condoms"
+        );
+      }
     }
   };
   return (
@@ -70,6 +113,8 @@ export default function App() {
       {showScore ? (
         <div className="score-section">
           You scored {score} out of {questions.length}
+          <br></br>
+          {comment}
         </div>
       ) : (
         <>
